@@ -1,0 +1,44 @@
+[debug] [2022-11-13T15:30:14.142Z] ----------------------------------------------------------------------
+[debug] [2022-11-13T15:30:14.144Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\quivu\Documents\GitHub\HackUTD\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2022-11-13T15:30:14.144Z] CLI Version:   11.16.0
+[debug] [2022-11-13T15:30:14.144Z] Platform:      win32
+[debug] [2022-11-13T15:30:14.144Z] Node Version:  v18.4.0
+[debug] [2022-11-13T15:30:14.145Z] Time:          Sun Nov 13 2022 09:30:14 GMT-0600 (Central Standard Time)
+[debug] [2022-11-13T15:30:14.146Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-13T15:30:14.213Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-13T15:30:14.214Z] > authorizing via signed-in user (quivun@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\quivu\Documents\GitHub\HackUTD
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-13T15:30:35.217Z] Using project from CLI flag: utdhackfirebase
+[debug] [2022-11-13T15:30:35.222Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/utdhackfirebase [none]
+[debug] [2022-11-13T15:30:36.686Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/utdhackfirebase 200
+[debug] [2022-11-13T15:30:36.686Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/utdhackfirebase {"projectId":"utdhackfirebase","projectNumber":"984684431161","displayName":"UTDHackFirebase","name":"projects/utdhackfirebase","resources":{"hostingSite":"utdhackfirebase","storageBucket":"utdhackfirebase.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_80e8bca8-a7e1-4b85-a43f-a72db24de892"}
+[info] i  Using project utdhackfirebase (UTDHackFirebase) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
