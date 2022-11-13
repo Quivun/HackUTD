@@ -1,0 +1,27 @@
+.container {
+    padding: 0 2rem;
+}
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar_elements {
+    width: 300px;
+    border-color: aliceblue;
+    border-style: solid;
+    border-left: 3px;
+    border-right: 3px;
+}
+
+.map {
+    height: 400px;
+    width: 400px;
+    
+}
