@@ -1,0 +1,17 @@
+{
+  "providers": [
+    "awscloudformation"
+  ],
+  "projectName": "figmaToCode",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "pages",
+      "DistributionDir": "pages",
+      "BuildCommand": "npm ci && npm run build",
+      "StartCommand": "npm run start"
+    }
+  }
+}

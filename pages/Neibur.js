@@ -2,7 +2,6 @@ import styles from '../styles/Neibur.module.css'
 import { useMemo, useRef, useState, useEffect } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
-import MyMapComponent from './components/Map';
 import EventItem from './components/EventItem';
 
 // let map;
@@ -35,22 +34,14 @@ function Neibur() {
     }, [listOfEvents]);
 
     return (<>
-    <button className='button' onClick={() => createEvent()} >Add Event!</button>
-    <div className={styles.sidebar}>
+    <div className={styles.sidebar_header}>
+        <button onClick={() => createEvent()} className={styles.sidebar_eventButton}>Add Event!</button>
+    </div>
+    <div className={styles.sidebar_eventList}>
         {Object.values(listOfEvents).map((item, i) => (
             <EventItem key={i} title={item.name} description={item.description}/>
         ))}
-        <EventItem title="Title" description="description"/>
-
-        <a href="https://nextjs.org/learn" className={styles.card}>
-          <h2>Learn &rarr;</h2>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-      </div>
-
-      <MyMapComponent/>
-
+    </div>
 </>
 );
 }
